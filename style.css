@@ -1,0 +1,155 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+border: none;
+text-transform: capitalize;
+transition: all .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+header #logo{
+    border: none;
+    width:150px;
+    height:100px;
+    margin-left:-65px;
+    border-radius: 55%;
+}
+
+header .nav-buttons a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: .7rem;
+    padding: .5rem 1.5rem;
+    color: lightblue;
+}
+
+header .nav-buttons a:hover,
+header .nav-buttons a.active-button{
+    color: #fff;
+    background: lightgray;
+}
+
+header .icons i,
+header .icons a{
+cursor: pointer;
+margin-left: .5rem;
+height: 4.5rem;
+line-height: 4.5rem;
+width: 4.5rem;
+text-align: center;
+font-size: 1.7rem;
+color:#192a56 ;
+border-radius: 50%;
+background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+color: #fff;
+background: lightgray;
+transform: rotate(360deg);
+}
+header .icons #menu-bars{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+     html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+
+}
+   
+
+@media (min-width:768){
+   header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .nav-buttons{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background:#fff;
+        border-top: .1rem solid rgba(0, 0, 0,.2);
+        border-bottom: .1rem solid rgba(0, 0, 0,.2);
+        padding: 1rem;
+
+    }
+
+    header .nav-buttons a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 1rem;
+        background: #eee;
+    }
+}
+
