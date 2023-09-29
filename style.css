@@ -52,8 +52,8 @@ header{
     justify-content: space-between;
     z-index: 1000;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-bottom-left-radius:2rem ;
-    border-bottom-right-radius:2rem ;
+    border-bottom-left-radius:1.5rem ;
+    border-bottom-right-radius:1.5rem ;
     
 }
 .btn{
@@ -68,17 +68,17 @@ header{
 }
 
 .btn:hover{
-    background: lightgrey;
+    background: lightblue;
     letter-spacing:.1rem ;
 }
 
 header #logo{
     border: none;
-    width:150px;
-    height:100px;
+    width:100px;
+    height:80px;
     margin-left:-65px;
     border-radius: 55%;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
     
 }
 
@@ -87,7 +87,7 @@ header .nav-buttons a{
     font-weight: 600;
     border-radius: .7rem;
     padding: .5rem 1.5rem;
-    color: lightblue;
+    color: #192a56;
 }
 
 header .nav-buttons a:hover,
@@ -210,7 +210,8 @@ width: 100%;
 .Products .box-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
+    gap:;
+    margin-left: 120px;
 }
 
 .Products .box-container .box{
@@ -222,7 +223,8 @@ width: 100%;
     position: relative;
     overflow: hidden;
     text-align: center;
-    width: 80%;
+    width: 73%;
+    /* height:400px; */ */
 
 }
 .Products .box-container .box:hover{
@@ -292,25 +294,192 @@ width: 100%;
     margin-right: 1rem;
     font-size: 2.5rem;
    }
+   .about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+   }
+   .about .row .image{
+    flex:1 1 45rem ;
+   }
+   .about .row .image img{
+    width: 100%;
+   }
 
+   .about .row .content{
+    flex:1 1 45rem ;
+   }
 
+   .about .row .content h3{
+    color:#192a56;
+    font-size: 4rem;
+    padding:.5rem 0 ;
+   }
 
+   .about .row .content p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:.5rem 0 ;
+    line-height: 2;
+   }
 
+   .about .row .content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+   }
 
+   .about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem
+   }
 
+   .about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color: lightblue;
+   }
+   .about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color: #192a56;
+   }
 
+   .menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.8rem;
+    margin-left: 120px;
+   }
 
+   .menu .box-container .box{
+    background: #fff;
+    border-radius: .7rem;
+    border: .1rem solid rgba(0, 0, 0,.2);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0,.1);
+  
+   }
+   .menu .box-container .box:hover{
+    transition: 0.7s ease;
+    transform: scale(1.1);
+}
 
+   .menu .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+   }
+   .menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+   }
+   .menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top: 2.5rem;right:2.5rem ;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align:center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color: #192a56;
+   }
 
+   .menu .box-container .box .image .fa-heart:hover{
+    background-color: lightblue;
+    color:#fff ;
 
+   }
 
+   .menu .box-container .box .content{
+    padding: 2rem;
+    padding-top: 0;
+   }
 
+   .menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+   }
 
+   .menu .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color:lightblue ;
+   }
 
+   .menu .box-container .box .content h3{
+    color: #192a56;
+    font-size: 2.5rem;
+   }
 
+   .menu .box-container .box .content p{
+    color: #666;
+    font-size: 1.6rem;
+    padding:.5rem 0 ;
+    line-height: 1.5;
+   }
 
+   .menu .box-container .box .content .pice{
+    color:lightblue ;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+   }
 
+   .review .slide{
+    padding: 2rem;
+    box-shadow:0 .5rem 1.5rem rgba(0, 0, 0,.1) ;
+    border: .1rem solid rgba(0, 0, 0,.2);
+    border-radius: .5rem;
+    position: relative;
+   }
 
+   .review .slide .fas fa-quote-right{
+    position: absolute;
+    top: 2rem;right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+   }
+
+   .review .slide .user{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+   }
+
+   .review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+   }
+
+   .review .slide .user h3{
+    color: #192a56;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+   }
+   .review .slide .user i{
+    font-size: 1.3rem;
+    color: lightblue;
+   }
+
+   .review .slide p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #666;
+   }
 
 
 
@@ -338,6 +507,11 @@ width: 100%;
     section{
         padding:2rem;
     }
+    .Products .box-container .box img{
+        height: auto;
+        margin: 1rem 0;
+        width: 100%;
+      }
 
 }
    
