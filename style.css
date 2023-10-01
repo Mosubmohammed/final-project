@@ -210,7 +210,6 @@ width: 100%;
 .Products .box-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:;
     margin-left: 120px;
 }
 
@@ -224,7 +223,6 @@ width: 100%;
     overflow: hidden;
     text-align: center;
     width: 73%;
-    /* height:400px; */ */
 
 }
 .Products .box-container .box:hover{
@@ -233,7 +231,7 @@ width: 100%;
 }
   
 .Products .box-container .box .fa-heart,
-.Products .box-container .box .fa-aya{
+.Products .box-container .box .fa-eye{
     position: absolute;
     top: 1.5rem;
     background: #eee;
@@ -246,7 +244,7 @@ width: 100%;
   }
   
   .Products .box-container .box .fa-heart:hover,
-  .Products .box-container .box .fa-aya:hover{
+  .Products .box-container .box .fa-eye:hover{
     background: lightblue;
     color: #fff;
     
@@ -257,7 +255,7 @@ width: 100%;
     
   }
   
-  .Products .box-container .box .fa-aya{
+  .Products .box-container .box .fa-eye{
    left: -15rem;
     
   }
@@ -268,7 +266,7 @@ width: 100%;
     
   }
   
-  .Products .box-container .box:hover .fa-aya{
+  .Products .box-container .box:hover .fa-eye{
    left: 1.5rem;
     
   }
@@ -370,7 +368,7 @@ width: 100%;
    .menu .box-container .box:hover{
     transition: 0.7s ease;
     transform: scale(1.1);
-}
+   }
 
    .menu .box-container .box .image{
     height: 25rem;
@@ -538,29 +536,20 @@ width: 100%;
 
 
 
-
-
-
-@media (max-width:991px) {
-     html{
-        font-size: 55%;
-    }
-    header{
-        padding: 1rem 2rem;
-    }
-
-    section{
-        padding:2rem;
-    }
-    
-
-}
+@media only screen and (min-width: 600px) {
    
 
-@media (min-width:768){
-   
-    
-   header .icons #menu-bars{
+  
+}   
+ 
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .color {
+      color: lightblue;
+      transform: translateY(50px);
+    }
+    header .icons #menu-bars{
         display: inline-block;
     }
     header .nav-buttons{
@@ -594,8 +583,18 @@ width: 100%;
         
         font-size: 5rem;
     }
-}
-@media (max-width: 991px){
+    .header{
+            background-color: #192a56;
+    }
+  }
+  /* Child.css */
+  
+  @media (max-width: 700px) {
+    .color {
+      color: red;
+    }
+  }
+/* @media (max-width: 991px){
     html{
         font-size: 50%;
     }
@@ -607,5 +606,5 @@ width: 100%;
       .order form .inputBox .input{
         width: 100%;
       }
-}
+} */
 
