@@ -7,7 +7,8 @@ px<!DOCTYPE html>
    <!--=============== CSS ===============-->
    <link rel="icon" href="./images/aa64f7470863cdf5f54156bc8954bdbb.jpg" type="image/x-icon">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./styles/style.css">
+   <link rel="stylesheet" href="./styles/shoppingCart.css">
 
    <!-- <link rel="stylesheet" href="./style.css" media="only screen and (min-width: 600px) and (max-width:900px) "> -->
 
@@ -37,7 +38,19 @@ px<!DOCTYPE html>
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
         <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon" data-quantitiy="0"></a>
+        <!-- ! cart  -->
+        <div class="cart">
+            <h2 class="cart-tittle">Your Cart</h2>
+            <!-- ! content -->
+            <div class="cart-content"></div>
+            <!-- ! total -->
+            <div class="total"></div>
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+            <!-- ! buy button -->
+            <button type="button" class="btn-buy">Pay Now</button>
+        </div>
     </div>
     
     </header>
@@ -704,6 +717,6 @@ px<!DOCTYPE html>
     
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>  
+    <script src="./js/main.js"></script>  
 </body>
 </html>

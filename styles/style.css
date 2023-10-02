@@ -108,13 +108,14 @@ font-size: 1.7rem;
 color:#192a56 ;
 border-radius: 50%;
 background: #eee;
+
 }
 
 header .icons i:hover,
 header .icons a:hover{
 color: #fff;
 background: lightgray;
-transform: rotate(360deg);
+/* transform: rotate(360deg); */
 }
 header .icons #menu-bars{
     display: none;
@@ -538,6 +539,8 @@ width: 100%;
     margin-bottom: 10px;
     font-size: 1.1em;
    }
+
+   
 
    /* footer .wave{
     position: absolute;
