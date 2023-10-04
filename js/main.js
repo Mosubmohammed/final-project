@@ -138,6 +138,7 @@ addProductToCart(title, price, productImg);
 updateTotal();
 }
 
+
 function addProductToCart(title, price, productImg){
   var cartShopBox=document.createElement('div');
   cartShopBox.classList.add('box');
