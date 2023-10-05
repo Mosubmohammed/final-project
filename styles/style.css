@@ -18,6 +18,30 @@ text-transform: capitalize;
 transition: all .2s linear;
 list-style: none;
 }
+/*=============== SCROLL UP ===============*/
+/* .scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: var(--body-color);
+    box-shadow:0 4px 12px hsl(207, 24%,35%, .15) ;
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    z-index: var(--z-tooltip);
+    color: var(--title-color);
+    transition: bottom .3s,transform .3s;
+
+}
+.scrollup:hover{
+    transform: translateY(-.25rem);
+}
+/* Show Scroll Up*/
+/* .show-scroll{
+    bottom: 7.5rem;
+}  */
+
 
 .total-price{
     font-family: 'Poppins', sans-serif; 
@@ -65,7 +89,7 @@ section:nth-child(even){
     top:25px;
     right: 103px;
     width: 18px;
-    height: 18px;
+    height: 19px;
     background: #02ac70;
     border-radius: 50%;
     color: white;
@@ -529,7 +553,7 @@ width: 100%;
 
    .about .row .content p{
     color:#666;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding:.5rem 0 ;
     line-height: 2;
    }
@@ -566,7 +590,9 @@ width: 100%;
    .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    gap: 1.8rem;
+    /* gap: 5rem; */
+    column-gap: -10rem;
+    row-gap: 5rem;
     margin-left: 120px;
    }
 
@@ -574,12 +600,14 @@ width: 100%;
     position: relative;
     padding: 10px;
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    background: #fff;
-    border-radius: .7rem;
-    border: .1rem solid rgba(0, 0, 0,.2);
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0,.4);
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0,.1);
-  
+  width: 80%;
+  height: 103%;
    }
+   
    .menu .box-container .box:hover{
     transition: 0.7s ease;
     transform: scale(1.1);
@@ -592,7 +620,7 @@ width: 100%;
     margin-bottom:0.5rem ;
     overflow: hidden;
     position: relative;
-    border-radius: .7rem;
+    border-radius: 2rem;
    }
    .menu .box-container .box .product-title2{
     color: #192a56;
@@ -607,7 +635,7 @@ width: 100%;
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: lightblue;
+    color: rgb(148, 216, 239);
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 50%;
@@ -671,9 +699,9 @@ width: 100%;
 
    .menu .box-container .box .pice{
     font-weight: 500;
-    color:lightblue ;
+    color:rgb(148, 216, 239) ;
     margin-left: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
    }
 
    .review{
@@ -779,6 +807,45 @@ width: 100%;
     margin-bottom: 10px;
     font-size: 1.1em;
    }
+   /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+    width: .78rem;
+    border-radius: .5rem;
+    background-color: hsl(207, 4%,75%);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:hsl(207, 4%, 65%) ;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:hsl(207, 4%, 55%) ;
+    
+}
+
+/* .loader-container{
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background:#fff;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.loader-container img{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 21%;
+
+}
+.loader-container .fade-out{
+top: 110%;
+opacity: 0;
+} */
 
    
 
@@ -845,11 +912,11 @@ width: 100%;
   }
   /* Child.css */
   
-  @media (max-width: 700px) {
+  /* @media (max-width: 700px) {
     .color {
       color: red;
     }
-  }
+  } */
 /* @media (max-width: 991px){
     html{
         font-size: 50%;
