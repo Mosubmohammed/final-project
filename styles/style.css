@@ -104,6 +104,7 @@ html{
 section{
     padding: 2rem 9%;
 
+
 }
 section:nth-child(even){
     background: #eee;
@@ -452,18 +453,21 @@ align-items: center;
 flex-wrap: wrap;
 gap: 2rem;
 padding-top: 9rem;
+
 }
 
 .home .home-slider .slide .content{
     flex: 1 1 45rem;
+    
 }
 
 .home .home-slider .slide .image{
-    /* flex: 1 1 45rem; */
+    flex: 1 1 45rem;
+
 }
 
 .home .home-slider .slide .image img{
-width: 100%;
+
 }
 
 
@@ -494,6 +498,7 @@ width: 100%;
     margin-left: 120px;
 }
 
+
 .Products .box-container .box{
     padding: 2.5rem;
     background: #fff;
@@ -506,7 +511,7 @@ width: 100%;
     width: 73%;
 
 }
-.Products .box-container .box:hover{
+.Products .box-container .product-hover:hover{
     transition: 0.7s ease;
     transform: scale(1.1);
 }
@@ -552,14 +557,21 @@ width: 100%;
     
   } */
 
-  .Products .box-container .box img{
-    height: 17rem;
+  .Products .box-container img{
+    height: 30rem;
+    width: 22rem;
     margin: 1rem 0;
+    border: .1rem solid rgba(0, 0, 0,.3);
+    border-radius: 4rem;
+    
   }
-  .Products .box-container .box h3{
+  .Products .box-container h3{
     color: #192a56;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    text-align: center;
+    margin-right: 17rem;
   }
+  
   .Products .box-container .box .stars{
    padding: 1rem 0;
   }
@@ -598,7 +610,7 @@ width: 100%;
 
    .about .row .content p{
     color:#666;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding:.5rem 0 ;
     line-height: 2;
    }
@@ -907,6 +919,38 @@ opacity: 0;
 
 
 @media (min-width: 600px) and (max-width: 1024px) {
+    
+    /* section{
+        
+        padding: 2rem 9%;
+        width: 350%;
+    
+    }
+    footer{
+        width: 550%;
+    } */
+    .home{
+        width: 200%;
+        margin-top: -30%;
+       
+    }
+    .Products{
+        width: 200%;
+    }
+    .about{
+        width: 150%;
+    }
+    .menu{
+        width:200%
+    }
+    .review{
+        width: 200%;
+    }
+    footer{
+        width: 350%;
+    }
+
+  
     .color {
       color: lightblue;
       transform: translateY(50px);
