@@ -926,7 +926,7 @@ opacity: 0;
 
 @media (min-width: 600px) and (max-width: 1024px) {
     
-    section{
+    /* section{
         
         padding: 2rem 9%;
         width: 150%;
@@ -934,7 +934,7 @@ opacity: 0;
     }
     footer{
         width: 150%;
-    }
+    } */
     .cart{
         height: 100%;
     }
@@ -989,9 +989,39 @@ opacity: 0;
     .header{
             background-color: #192a56;
     }
+    body
+    {
+      width: 1600px;
+    }
+    .review{
+      height: 500px;
+    }
+
+    #new{
+      height: 1000px;
+
+    }
+    {
+        margin-right: 6rem;
+    }
   } 
+
+  @media (min-width: 700px) and (max-width: 950px){
+    body
+      {
+        width: 10px;
+      }
+      .review{
+        height: 500px;
+      }
+ 
+      #new{
+        height: 1000px;
+
+      }
+  }
   /* Child.css */
-  
+ 
  
  @media (max-width: 991px){
  
@@ -1005,6 +1035,18 @@ opacity: 0;
 
       .order form .inputBox .input{
         width: 100%;
+      }
+      body
+      {
+        width: 1600px;
+      }
+      .review{
+        height: 500px;
+      }
+ 
+      #new{
+        height: 1000px;
+
       }
 } *//*
 
